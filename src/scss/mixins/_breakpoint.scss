@@ -1,0 +1,21 @@
+@mixin breakpoint-max($breakpoint) {
+    @if map-has-key($map: $breakpoints, $key: $breakpoint) {
+        @media (max-width: #{map-get($breakpoints, $breakpoint)}) {
+            @content;
+        }
+    }
+    @else {
+        @warn "Can't find value for breakpoint `#{$breakpoint}`.";
+    }
+}
+
+@mixin breakpoint-min($breakpoint) {
+    @if map-has-key($map: $breakpoints, $key: $breakpoint) {
+        @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+            @content;
+        }
+    }
+    @else {
+        @warn "Can't find value for breakpoint `#{$breakpoint}`.";
+    }
+}

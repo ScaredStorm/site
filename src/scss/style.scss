@@ -1,3 +1,11 @@
-.schavuit {
-    background-color: #ff0000;
-}
+@import 'config';
+
+@import 'mixins/breakpoint';
+
+@import 'theme/utils';
+@import 'theme/normalize';
+@import 'theme/base';
+
+@import 'theme/components/header';
+@import 'theme/components/container';
+@import 'theme/components/footer';

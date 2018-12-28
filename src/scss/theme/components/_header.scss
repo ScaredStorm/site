@@ -1,0 +1,24 @@
+.header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    & .header-container {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        padding-bottom: 1rem;
+        box-sizing: border-box;
+        justify-content: space-between;
+
+        & h1 {
+            font-weight: bold;
+            margin: 0;
+        }
+
+        & p {
+            margin: 0;
+        }
+    }
+}

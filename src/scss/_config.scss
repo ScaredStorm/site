@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+$primary:   #676767;
+$secondary: #000000;
+
+$font-family: 'Lato', Arial, sans-serif;
+$font-size: 26px;
+
+$container-breakpoints: s, m, l, xl;
+$breakpoints: (
+    xs: 0,
+    s: 576px,
+    m: 768px,
+    l: 992px,
+    xl: 1200px
+);
