@@ -1,0 +1,35 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat($grid-columns, 1fr);
+    grid-gap: $grid-gap;
+}
+
+@each $breakpoint in map-keys($breakpoints) {
+    @for $i from 1 through $grid-columns + 1 {
+        @include breakpoint-min($breakpoint) {
+            .gs-#{$i}-#{$breakpoint} {
+                grid-column: span $i;
+            }
+        }
+    }
+}
+
+@each $breakpoint in map-keys($breakpoints) {
+    @for $i from 1 through $grid-columns + 1 {
+        @include breakpoint-min($breakpoint) {
+            .gcs-#{$i}-#{$breakpoint} {
+                grid-column-start: $i;
+            }
+        }
+    }
+}
+
+@each $breakpoint in map-keys($breakpoints) {
+    @for $i from 1 through $grid-columns + 1 {
+        @include breakpoint-min($breakpoint) {
+            .gce-#{$i}-#{$breakpoint} {
+                grid-column-end: $i;
+            }
+        }
+    }
+}

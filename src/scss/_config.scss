@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
-$primary:   #676767;
+$primary:   #404040;
 $secondary: #000000;
 
 $font-family: 'Lato', Arial, sans-serif;
@@ -14,3 +14,6 @@ $breakpoints: (
     l: 992px,
     xl: 1200px
 );
+
+$grid-gap: 15px;
+$grid-columns: 12;

@@ -5,7 +5,10 @@
 @import 'theme/utils';
 @import 'theme/normalize';
 @import 'theme/base';
+@import 'theme/grid';
 
 @import 'theme/components/header';
 @import 'theme/components/container';
+@import 'theme/components/section';
 @import 'theme/components/footer';
+@import 'theme/components/project';

@@ -1,0 +1,23 @@
+.project {
+    position: relative;
+    overflow: hidden;
+
+    .project-container {
+        .project-image {
+            position: relative;
+            height: 0;
+            padding-bottom: (1080 / 1920) * 100%;
+            overflow: hidden;
+            
+            & img {
+                width: 100%;
+                filter: grayscale(100%);
+                transition: filter 200ms ease-in-out;
+        
+                &:hover {
+                    filter: grayscale(0%);
+                }
+            }
+        }
+    }
+}
