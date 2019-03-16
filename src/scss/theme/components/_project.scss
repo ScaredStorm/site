@@ -1,6 +1,24 @@
 .project {
     position: relative;
     overflow: hidden;
+    display: inline-block;
+    color: $primary;
+
+    &:link {
+        color: $primary;
+    }
+
+    &:hover {
+        color: $secondary;
+    }
+
+    &:active {
+        color: $primary;
+    }
+
+    &:visited {
+        color: $primary;
+    }
 
     .project-container {
         .project-image {

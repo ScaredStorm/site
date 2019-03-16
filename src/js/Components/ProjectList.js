@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 import ProjectItem from './ProjectItem';
 
 export default class ProjectList extends Component {
@@ -12,27 +13,33 @@ export default class ProjectList extends Component {
             projects: [
                 {
                     title: "Tiny Safe World",
-                    image: "https://www.sboelhouwers.nl/wp-content/uploads/2017/04/TinySafeWorld.png"
+                    image: "https://www.sboelhouwers.nl/wp-content/uploads/2017/04/TinySafeWorld.png",
+                    url_key: "tiny-safe-world"
                 },
                 {
                     title: "Experiment Visualizer",
-                    image: "https://www.sboelhouwers.nl/wp-content/uploads/2017/03/Visualizer.png"
+                    image: "https://www.sboelhouwers.nl/wp-content/uploads/2017/03/Visualizer.png",
+                    url_key: "visualizer"
                 },
                 {
                     title: "Tower Defense with A*",
-                    image: "https://www.sboelhouwers.nl/wp-content/uploads/2017/03/towerdefense.png"
+                    image: "https://www.sboelhouwers.nl/wp-content/uploads/2017/03/towerdefense.png",
+                    url_key: "tower-defense-with-astar"
                 },
                 {
                     title: "Space Shooter",
-                    image: "https://www.sboelhouwers.nl/wp-content/uploads/2017/03/shooter.png"
+                    image: "https://www.sboelhouwers.nl/wp-content/uploads/2017/03/shooter.png",
+                    url_key: "space-shooter"
                 },
                 {
                     title: "Cellular Automaton Experiment",
-                    image: "https://www.sboelhouwers.nl/wp-content/uploads/2017/03/cellular.png"
+                    image: "https://www.sboelhouwers.nl/wp-content/uploads/2017/03/cellular.png",
+                    url_key: "cellular-automaton-experiment"
                 },
                 {
                     title: "Platformer Prototype",
-                    image: "https://www.sboelhouwers.nl/wp-content/uploads/2017/03/platformer.png"
+                    image: "https://www.sboelhouwers.nl/wp-content/uploads/2017/03/platformer.png",
+                    url_key: "platformer-prototype"
                 }
             ]
         });
